@@ -8,7 +8,8 @@
     "export": "next export",
     "start": "next start",
     "deploy": "npm run build && npm run export && firebase deploy",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "cp .next/routes-manifest.json .next/standalone/.next/routes-manifest.json"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
@@ -21,6 +22,7 @@
     "@reduxjs/toolkit": "^2.8.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "firebase-functions": "^6.3.2",
     "lucide-react": "^0.522.0",
     "next": "15.3.4",
     "next-themes": "^0.4.6",

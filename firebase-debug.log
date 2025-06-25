@@ -1,0 +1,464 @@
+[debug] [2025-06-25T17:31:37.225Z] ----------------------------------------------------------------------
+[debug] [2025-06-25T17:31:37.227Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-06-25T17:31:37.228Z] CLI Version:   14.8.0
+[debug] [2025-06-25T17:31:37.228Z] Platform:      win32
+[debug] [2025-06-25T17:31:37.228Z] Node Version:  v22.13.0
+[debug] [2025-06-25T17:31:37.228Z] Time:          Wed Jun 25 2025 23:01:37 GMT+0530 (India Standard Time)
+[debug] [2025-06-25T17:31:37.228Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-25T17:31:37.416Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-25T17:31:37.416Z] > authorizing via signed-in user (sakshamswarup2430@gmail.com)
+[debug] [2025-06-25T17:31:37.417Z] [iam] checking project ecommerce-7b8bc for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-25T17:31:37.418Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:37.418Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:37.418Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions [none]
+[debug] [2025-06-25T17:31:37.419Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions x-goog-quota-user=projects/ecommerce-7b8bc
+[debug] [2025-06-25T17:31:37.419Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-25T17:31:38.916Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions 200
+[debug] [2025-06-25T17:31:38.916Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-25T17:31:38.917Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:38.917Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:38.917Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-06-25T17:31:38.917Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-25T17:31:40.531Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-06-25T17:31:40.531Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-25T17:31:40.531Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:40.531Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:40.531Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc [none]
+[debug] [2025-06-25T17:31:41.111Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc 200
+[debug] [2025-06-25T17:31:41.111Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc {"projectId":"ecommerce-7b8bc","projectNumber":"850063276078","displayName":"Ecommerce","name":"projects/ecommerce-7b8bc","resources":{"hostingSite":"ecommerce-7b8bc"},"state":"ACTIVE","etag":"1_03ed8ad5-38f9-437a-b5d7-1a6245a0b062"}
+[info] 
+[info] === Deploying to 'ecommerce-7b8bc'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2025-06-25T17:31:41.114Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:41.115Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:41.115Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc [none]
+[debug] [2025-06-25T17:31:41.434Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc 200
+[debug] [2025-06-25T17:31:41.434Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc {"projectNumber":"850063276078","projectId":"ecommerce-7b8bc","lifecycleState":"ACTIVE","name":"Ecommerce","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-25T10:11:21.281181Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-06-25T17:31:41.436Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:41.436Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:41.436Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc/adminSdkConfig [none]
+[debug] [2025-06-25T17:31:42.135Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc/adminSdkConfig 200
+[debug] [2025-06-25T17:31:42.136Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc/adminSdkConfig {"projectId":"ecommerce-7b8bc","storageBucket":"ecommerce-7b8bc.firebasestorage.app"}
+[debug] [2025-06-25T17:31:42.136Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:42.136Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:42.136Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ecommerce-7b8bc/configs [none]
+[debug] [2025-06-25T17:31:42.450Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ecommerce-7b8bc/configs 200
+[debug] [2025-06-25T17:31:42.450Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ecommerce-7b8bc/configs {}
+[debug] [2025-06-25T17:31:42.451Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-06-25T17:31:43.021Z] > [functions] package.json contents: {
+  "name": "functions",
+  "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^4.4.1",
+    "next": "^15.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
+[debug] [2025-06-25T17:31:43.021Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-06-25T17:31:43.022Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-25T17:31:43.028Z] Found firebase-functions binary at 'C:\Users\saksh\OneDrive\Desktop\ecommerce\ecommmerceapp\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8732
+
+[error] (node:10556) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[debug] [2025-06-25T17:31:43.627Z] Got response from /__/functions.yaml {"endpoints":{"nextApp":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"nextApp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged C:\Users\saksh\OneDrive\Desktop\ecommerce\ecommmerceapp\functions (36.54 KB) for uploading 
+[debug] [2025-06-25T17:31:47.691Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:47.691Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:47.691Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/-/functions [none]
+[debug] [2025-06-25T17:31:48.534Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/-/functions 200
+[debug] [2025-06-25T17:31:48.534Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/-/functions {}
+[debug] [2025-06-25T17:31:48.534Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:48.534Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:48.534Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/ecommerce-7b8bc/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-06-25T17:31:50.155Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/ecommerce-7b8bc/locations/-/functions 200
+[debug] [2025-06-25T17:31:50.156Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/ecommerce-7b8bc/locations/-/functions {}
+[debug] [2025-06-25T17:31:50.158Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:50.158Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:50.158Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc [none]
+[debug] [2025-06-25T17:31:51.663Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc 200
+[debug] [2025-06-25T17:31:51.663Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc {"projectNumber":"850063276078","projectId":"ecommerce-7b8bc","lifecycleState":"ACTIVE","name":"Ecommerce","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-25T10:11:21.281181Z"}
+[debug] [2025-06-25T17:31:51.666Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:51.666Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:51.666Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions [none]
+[debug] [2025-06-25T17:31:51.666Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-25T17:31:52.831Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions 200
+[debug] [2025-06-25T17:31:52.831Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions {"name":"projects/850063276078/sites/ecommerce-7b8bc/versions/1d60ebac581c5e7f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-25T17:31:52.831Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2025-06-25T17:31:52.832Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:52.832Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:52.832Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions [none]
+[debug] [2025-06-25T17:31:52.832Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions x-goog-quota-user=projects/ecommerce-7b8bc
+[debug] [2025-06-25T17:31:52.832Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-06-25T17:31:53.117Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions 200
+[debug] [2025-06-25T17:31:53.117Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-06-25T17:31:53.117Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2025-06-25T17:31:53.118Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:53.118Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:31:53.118Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-06-25T17:31:53.118Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl {}
+[debug] [2025-06-25T17:32:08.966Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-06-25T17:32:08.966Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/c9dbdc70-3a09-424c-99c6-c596aa47867c.zip?GoogleAccessId=service-850063276078@gcf-admin-robot.iam.gserviceaccount.com&Expires=1750874528&Signature=o6F2H%2F6uP%2FLJYfeZW87R0bY92XxuCW2%2FNWFGkGxCpp6yvI4x0eyqrlPi7hFWntBFO3Y3wV%2Bu19h2nobIIKrILGTIlb95IUSToBBZyvY%2Bh3zjgQ9lBPjE7yGsSXEvEO5A38imNiA81Gz%2FfQVdlV%2BcV43JFVUNph0vzP3DZHtaHmEIYYoymMupzvE2xobFY%2BjLaBEaIlB1muRG584IflO%2FZCKbOWbCcpLzdd%2Fymq%2FJtPBwE%2Bs13%2FgJLodixRDue%2FxqlXZd2VBJfacE5DmbPN9BcFssaUWmbBGO%2FVeCsVBpO2D1OP5TfG2ipGLuLrf2bCwnxBAxb2ldtobSMRPuSJa4FQ%3D%3D"}
+[debug] [2025-06-25T17:32:08.966Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/c9dbdc70-3a09-424c-99c6-c596aa47867c.zip GoogleAccessId=service-850063276078%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1750874528&Signature=o6F2H%2F6uP%2FLJYfeZW87R0bY92XxuCW2%2FNWFGkGxCpp6yvI4x0eyqrlPi7hFWntBFO3Y3wV%2Bu19h2nobIIKrILGTIlb95IUSToBBZyvY%2Bh3zjgQ9lBPjE7yGsSXEvEO5A38imNiA81Gz%2FfQVdlV%2BcV43JFVUNph0vzP3DZHtaHmEIYYoymMupzvE2xobFY%2BjLaBEaIlB1muRG584IflO%2FZCKbOWbCcpLzdd%2Fymq%2FJtPBwE%2Bs13%2FgJLodixRDue%2FxqlXZd2VBJfacE5DmbPN9BcFssaUWmbBGO%2FVeCsVBpO2D1OP5TfG2ipGLuLrf2bCwnxBAxb2ldtobSMRPuSJa4FQ%3D%3D
+[debug] [2025-06-25T17:32:08.966Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/c9dbdc70-3a09-424c-99c6-c596aa47867c.zip [stream]
+[debug] [2025-06-25T17:32:09.819Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/c9dbdc70-3a09-424c-99c6-c596aa47867c.zip 200
+[debug] [2025-06-25T17:32:09.819Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/c9dbdc70-3a09-424c-99c6-c596aa47867c.zip [omitted]
+[info] +  functions: functions folder uploaded successfully 
+[info] i  hosting[ecommerce-7b8bc]: beginning deploy... 
+[info] i  hosting[ecommerce-7b8bc]: found 68 files in out 
+[debug] [2025-06-25T17:32:09.843Z] [hosting] uploading with 200 concurrency
+[debug] [2025-06-25T17:32:09.852Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:32:09.852Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:32:09.854Z] [hosting] hash cache [b3V0] stored for 68 files
+[debug] [2025-06-25T17:32:09.854Z] [hosting][hash queue][FINAL] {"max":4,"min":1,"avg":1.3591130231814907,"active":0,"complete":68,"success":68,"errored":0,"retried":0,"total":68,"elapsed":9}
+[debug] [2025-06-25T17:32:09.854Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/1d60ebac581c5e7f:populateFiles [none]
+[debug] [2025-06-25T17:32:09.854Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/1d60ebac581c5e7f:populateFiles {"files":{"/window.svg":"6bd2003bd35bb32c1c0d99ab3aeac0cc1edaefd79f27df1d954bc87184048d74","/vercel.svg":"529a1a21b4a82475a82db26173c28d7b27e2dc9d4b900eaf1c5329d96eea4ddd","/signup.txt":"b80ae2808405cd94aa708a07bd81c59aaf97ebacbc120a8bce9db92fc3f90264","/signup.html":"5b9f72e9e8e5f4f56ca6fb085401ab858a7226a275c0d242518fc9640cf1f2a3","/next.svg":"0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f","/login.txt":"0b9abb8d404bf0e91ec14fd9ebc11ba0433df1f4a10f90fdb81d757b1c4dc9fb","/login.html":"d2cc42f0f04b3dd26b1552faafd9e8f518e84bb72170d2306cb774c989e2775d","/index.txt":"bc86b5b16eefa0ef12cc5f21d112cbfc7a3077f758fc1b9dac5af5b4ae03f7fe","/index.html":"e60c20894be92f0aac60d5b6a77c8f2c08e1dfe06a2f974d3d9cedcc96d4c102","/globe.svg":"6502a3e6120bf2d6e8417e7c40bb57fb8a6954de9c86d3f43076a75b60cd23a2","/file.svg":"5a09df6187e21aa9a7d05094389385876ac93c818e1dcbb77a26a8fe408bf79c","/favicon.ico":"36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","/404.html":"6cf2d5095a593cd3cb1a4f11bb1056f58b2a34d247121255d2c61f2f22952073","/_next/static/media/fe0777f1195381cb-s.woff2":"7ea8aa4c12ee19cf9064b1f8d31a8093ca9b7a20c430bd26ce8fa9d28ca49791","/_next/static/media/f5b513e981884070-s.woff2":"3e11e66105c9f9b0c3dbc8fff9737c1931ced47c4365477f3c51cd0c1d840535","/_next/static/media/f54d3b402c212b9e-s.woff2":"15de524ec8716cbc387d541d413bca723db1c93e2a5c111f0a0659bbf04db87d","/_next/static/media/f10b8e9d91f3edcb-s.woff2":"1bb6cff1da82f3a9b4f588c872083e412dc9756ff00e5c7a25a6ef9d5ac0d2ee","/_next/static/media/eafabf029ad39a43-s.p.woff2":"c5bd05024e1e2129db2746a432087f86ecee241a72d9990429e8e2a92f395391","/_next/static/media/e4af272ccee01ff0-s.p.woff2":"86835ac53a0e1de04820388d01b501389d5e9311509282b5e3bfbfc752754083","/_next/static/media/df0a9ae256c0569c-s.woff2":"5ef466d8ca6f4a51fa3751faea59ad2f63b15dbf9782ae4246bcadacc57f6b8f","/_next/static/media/db911767852bc875-s.woff2":"7a5cb883e026e70eadf536ff2a4053303f2d104108ef9109d95d96792c9acec0","/_next/static/media/c3bc380753a8436c-s.woff2":"ce8f68446de64b95bdb0484f6347d2e2aaebb12aa191f5c513f553c91da79555","/_next/static/media/b957ea75a84b6ea7-s.p.woff2":"a59c0152a6ad63dbbd6d072df71a1928613ca4f1e0c57824b06cfbaaab15ec7d","/_next/static/media/b8442747db2a9bad-s.woff2":"78504aa3875c01bd8a96c398db6a029aaaa25dbdc3b2b9643d89c60ffc981dff","/_next/static/media/a1386beebedccca4-s.woff2":"5232b7db292516451404f5717dbecf3e86ebbd61263585e160ce44518bdf19fa","/_next/static/media/9e82d62334b205f4-s.p.woff2":"7c3c031b2e08b8ba4918ea98de336074e998243db34e574a0e1f9038bcbe1998","/_next/static/media/97e0cb1ae144a2a9-s.woff2":"7f297ea688c4600e59ca6534a3f21f53bfa3f286cc0d19a35543315781951381","/_next/static/media/8e9860b6e62d6359-s.woff2":"cd2992a875e4939d47289a3cc44c8b8a0e63817f4cc9fbd8b3bdf93b5f66fbb3","/_next/static/media/8888a3826f4a3af4-s.p.woff2":"de52eb28b773356b47ace1d81c28e1932d1ec1fa302cc5455f0c7c8384b77a6c","/_next/static/media/7ede3623c9ddac57-s.woff2":"cbaf276deed5102e5c61474792f66d84028f5f0a332d4705f949914051ca4932","/_next/static/media/7db6c35d839a711c-s.p.woff2":"9162a070edc3148ec0ad858544b039329435841b25c3c487d48eea498c79fcdd","/_next/static/media/7108afb8b1381ad1-s.p.woff2":"fc83b4cde7b27e51420dc829cee7e56eaafd491abf763e55dc02fb549904011a","/_next/static/media/6c9a125e97d835e1-s.woff2":"b7ffcedc865fa6d6fec8b492ac73cf65920bf148c05e89c3325dde65b350cf2e","/_next/static/media/6c177e25b87fd9cd-s.woff2":"cc8cbeacc17b8d1c0cf8f83af10889fc738913bc742f9420b09c0dd7234f9a30","/_next/static/media/6245472ced48d3be-s.p.woff2":"98cb0f8f6ce0dc961c5a2fbcc3aeaec1e000fef3d5db37ada5e3e8529d3f7741","/_next/static/media/5fb25f343c7550ca-s.woff2":"9839e500050a774b62fcabc109d5841e85c2576781cfa7ae31192a1939724771","/_next/static/media/581909926a08bbc8-s.woff2":"0e60a16188a2d115835bb0497cc663807ef4c951ea3033aaaa98e4e9605510e1","/_next/static/media/55c55f0601d81cf3-s.woff2":"f919b2595b36cbe21633695ac08cbc808d615f1e5e964227b64c6d398caa0332","/_next/static/media/4c285fdca692ea22-s.p.woff2":"ee9454aec968f23e95e86cfca33bc62f2a2a452d97823eec4cc5829158bd88c2","/_next/static/media/29e7bbdce9332268-s.woff2":"c3a0c0179ad6dff7ee771b0e1bbbee12175c086ea7e0000e6bd5ff47e09af4b2","/_next/static/media/29a4aea02fdee119-s.woff2":"18ee0d92e52a5b2014a47b9474dde5cab064b2e257cf817139126426aebd7713","/_next/static/media/28485c0de2075f40-s.woff2":"0ec09af5dfed390ab4d71370390b0a2abda7c75f3851ee3facd0c751264a4da5","/_next/static/media/26a46d62cd723877-s.woff2":"ae5c06e2307aad7bf8fb02467ddd2ea6d7f40ea27915c5d9667f7632db6a0dbc","/_next/static/media/2246fb8caa01a49c-s.woff2":"e4165ae8de87e96519da47fc4ab9da99f8feef82d44ae079dc961079403abdee","/_next/static/media/0938b75f61da35fc-s.woff2":"15efdacf14198c4e0244983baee997ca5d698adc81c34245ee7eaa9944d0d01a","/_next/static/media/0484562807a97172-s.p.woff2":"bbf9d54f0278fe17c584ae99fbc265ea46f9972c2ba0e300bbef8329cd950333","/_next/static/media/034d78ad42e9620c-s.woff2":"e45679dfff636f4a386fab877f76e27139b3e60c3d1e11d31e527016c4157409","/_next/static/css/8332656bf35cec81.css":"00e82b4a328bc991f90c39db1bab043bc039b60249d8e316a647f53c491708d8","/_next/static/css/101fa57320d6aaf0.css":"21c0611b61bf22241297d2087eed81fd3d9bc4a72939d06e3bd8ba36d727dfec","/_next/static/chunks/webpack-b8fe7a5d48131678.js":"5ff58e1ae38118c7ae76affe177e62fd1553b6db1692d02c4903fd0e3954ee6b","/_next/static/chunks/polyfills-42372ed130431b0a.js":"18e28d3214eda45048d80d3925ea7627b809e69ad2e95f7f98459e9146a61c3d","/_next/static/chunks/main-app-63c4ce9b0348c1a8.js":"57f7cad1c6e9dff7ac47d4bb297c06df55ace22abba836ebbe1ec0b229570138","/_next/static/chunks/main-829d43144a777921.js":"dac2436658d875db7a6d536198b657f5d79e97b575eb544cf45755323faea9b5","/_next/static/chunks/framework-f593a28cde54158e.js":"c0e31b38c07fb2cac30269c70d55077e4f6a99e360e0c256f9b6f2d74adf24e4","/_next/static/chunks/684-6966b14bb5be4067.js":"23a2a50e3d5a36e61b157eec8895b36bf6f3b679acff48610e41d00b022a93b6","/_next/static/chunks/4bd1b696-706bea890ba55b7c.js":"99db1cc472f86b1e139c5d34542f09147d0df9ebd3468166b316b80fff8bbd74","/_next/static/chunks/472.a3826d29d6854395.js":"305e361c64ccf8c2f956618d58efccb54e7dfc79013eca70fe4e27abf0e2724e","/_next/static/chunks/341.df3329d77a5faa19.js":"9563f2302179d3abf33dd49b6eab6595a1cdeb7d581ca034be150957a06529e3","/_next/static/chunks/302-cfa01901dd588b85.js":"3f945283891b7d7271c3ae69435802b611e50dd883c35791491249634b3dcb57","/_next/static/chunks/pages/_error-71d2b6a7b832d02a.js":"36785219d9c2deae036e57c6807546fe7d1e5152565ab15ac68edd304c8e02dc","/_next/static/chunks/pages/_app-92f2aae776f86b9c.js":"f7ae3774eb08a03f3e0162b5074ae3e767bd46332f84cb20bca3ab1aa1f72eaf","/_next/static/chunks/app/page-687dfdffc8d1b6e5.js":"30217fd2bb176457348694d18b8c6d0f55fbfb48c970612b282e5876873efa8d","/_next/static/chunks/app/layout-bf27708ad52f4272.js":"ba6de316c897a202c7ca7dc793e5c806e0677e1345d2318a0dcdf451e2a29b5e","/_next/static/chunks/app/_not-found/page-7eb710445113f8e2.js":"57699909ca93875b9d5a282c5aa1b0771ed6bd28a90c5cdbe75525f721f28b87","/_next/static/chunks/app/(auth)/signup/page-a3493afdc25d1ec7.js":"d348dba80ce0cfb609d2daa9b6c9f347a7fdb78e1f25962036a9f4ccf3cff8fe","/_next/static/chunks/app/(auth)/login/page-c6c862afae7090ef.js":"d160f1089fdbeff00add005eadb5cb0779d543aae0905b78f0cac724c58f74be","/_next/static/0pkKCyOlqf9y5G4GSAw0Z/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/_next/static/0pkKCyOlqf9y5G4GSAw0Z/_buildManifest.js":"6c95f182cf53e60baba1e740c33cddc1758cf34a370eb1e7d61bd4172e9f7edc"}}
+[debug] [2025-06-25T17:32:10.990Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/1d60ebac581c5e7f:populateFiles 200
+[debug] [2025-06-25T17:32:10.990Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/1d60ebac581c5e7f:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-7b8bc/versions/1d60ebac581c5e7f/files"}
+[debug] [2025-06-25T17:32:10.991Z] [hosting][populate queue][FINAL] {"max":1139,"min":1139,"avg":1139,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1139}
+[debug] [2025-06-25T17:32:10.991Z] [hosting] uploads queued: 0
+[debug] [2025-06-25T17:32:10.991Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1750872730991}
+[info] +  hosting[ecommerce-7b8bc]: file upload complete 
+[debug] [2025-06-25T17:32:10.991Z] [hosting] deploy completed after 1170ms
+[info] i  functions: creating Node.js 22 (1st Gen) function nextApp(us-central1)... 
+[debug] [2025-06-25T17:32:10.994Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:32:10.994Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:32:10.994Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions [none]
+[debug] [2025-06-25T17:32:10.994Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions {"name":"projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp","sourceUploadUrl":"https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/c9dbdc70-3a09-424c-99c6-c596aa47867c.zip?GoogleAccessId=service-850063276078@gcf-admin-robot.iam.gserviceaccount.com&Expires=1750874528&Signature=o6F2H%2F6uP%2FLJYfeZW87R0bY92XxuCW2%2FNWFGkGxCpp6yvI4x0eyqrlPi7hFWntBFO3Y3wV%2Bu19h2nobIIKrILGTIlb95IUSToBBZyvY%2Bh3zjgQ9lBPjE7yGsSXEvEO5A38imNiA81Gz%2FfQVdlV%2BcV43JFVUNph0vzP3DZHtaHmEIYYoymMupzvE2xobFY%2BjLaBEaIlB1muRG584IflO%2FZCKbOWbCcpLzdd%2Fymq%2FJtPBwE%2Bs13%2FgJLodixRDue%2FxqlXZd2VBJfacE5DmbPN9BcFssaUWmbBGO%2FVeCsVBpO2D1OP5TfG2ipGLuLrf2bCwnxBAxb2ldtobSMRPuSJa4FQ%3D%3D","entryPoint":"nextApp","runtime":"nodejs22","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"9bed87fb8050f89d0c6c5ea61c5a1d80cd3aee15"},"httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"minInstances":null,"maxInstances":null,"ingressSettings":null,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"ecommerce-7b8bc\",\"storageBucket\":\"ecommerce-7b8bc.firebasestorage.app\"}","GCLOUD_PROJECT":"ecommerce-7b8bc","EVENTARC_CLOUD_EVENT_SOURCE":"projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp"},"serviceAccountEmail":null,"availableMemoryMb":null,"timeout":null,"vpcConnector":null,"vpcConnectorEgressSettings":null,"buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}}
+[debug] [2025-06-25T17:32:11.639Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions 400
+[debug] [2025-06-25T17:32:11.639Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions {"error":{"code":400,"message":"Failed to create 1st Gen function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp: runtime: Runtime validation errors: [error_code: INVALID_RUNTIME\nmessage: \"Runtime \\\"nodejs22\\\" is not supported on GCF Gen1\"\n]","status":"INVALID_ARGUMENT"}}
+[warn] !  functions: failed to create function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp 
+[error] Failed to create function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp
+[debug] [2025-06-25T17:32:11.644Z] Total Function Deployment time: 647
+[debug] [2025-06-25T17:32:11.644Z] 1 Functions Deployed
+[debug] [2025-06-25T17:32:11.644Z] 1 Functions Errored
+[debug] [2025-06-25T17:32:11.644Z] 0 Function Deployments Aborted
+[debug] [2025-06-25T17:32:11.644Z] Average Function Deployment time: 647
+[info] 
+[info] Functions deploy had errors with the following functions:
+	nextApp(us-central1)
+[debug] [2025-06-25T17:32:11.800Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[debug] [2025-06-25T17:32:11.800Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:32:11.800Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:32:11.800Z] >>> [apiv2][query] GET https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts [none]
+[debug] [2025-06-25T17:32:13.129Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts 404
+[debug] [2025-06-25T17:32:13.129Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-06-25T17:32:13.129Z] Failed to check artifact cleanup policy for region us-central1: Request to https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts had HTTP Error: 404, Requested entity was not found. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts had HTTP Error: 404, Requested entity was not found.","status":404}
+[debug] [2025-06-25T17:32:13.129Z] Functions deploy failed.
+[debug] [2025-06-25T17:32:13.129Z] {
+  "endpoint": {
+    "id": "nextApp",
+    "project": "ecommerce-7b8bc",
+    "region": "us-central1",
+    "entryPoint": "nextApp",
+    "platform": "gcfv1",
+    "runtime": "nodejs22",
+    "httpsTrigger": {},
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"ecommerce-7b8bc\",\"storageBucket\":\"ecommerce-7b8bc.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "ecommerce-7b8bc",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp"
+    },
+    "codebase": "default",
+    "targetedByOnly": false,
+    "hash": "9bed87fb8050f89d0c6c5ea61c5a1d80cd3aee15",
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    }
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Failed to create 1st Gen function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp: runtime: Runtime validation errors: [error_code: INVALID_RUNTIME\nmessage: \"Runtime \\\"nodejs22\\\" is not supported on GCF Gen1\"\n]",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "Request to https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions had HTTP Error: 400, Failed to create 1st Gen function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp: runtime: Runtime validation errors: [error_code: INVALID_RUNTIME\nmessage: \"Runtime \\\"nodejs22\\\" is not supported on GCF Gen1\"\n]",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2025-06-25T17:32:13.199Z] Error: Failed to create function nextApp in region us-central1
+    at C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:52:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Fabricator.createV1Function (C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:182:32)
+    at async Fabricator.createEndpoint (C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:134:13)
+    at async handle (C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions
+[debug] [2025-06-25T17:33:21.655Z] ----------------------------------------------------------------------
+[debug] [2025-06-25T17:33:21.657Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-06-25T17:33:21.658Z] CLI Version:   14.8.0
+[debug] [2025-06-25T17:33:21.658Z] Platform:      win32
+[debug] [2025-06-25T17:33:21.658Z] Node Version:  v22.13.0
+[debug] [2025-06-25T17:33:21.658Z] Time:          Wed Jun 25 2025 23:03:21 GMT+0530 (India Standard Time)
+[debug] [2025-06-25T17:33:21.658Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-25T17:33:21.846Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-25T17:33:21.847Z] > authorizing via signed-in user (sakshamswarup2430@gmail.com)
+[debug] [2025-06-25T17:33:21.847Z] [iam] checking project ecommerce-7b8bc for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-25T17:33:21.848Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:21.848Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:21.848Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions [none]
+[debug] [2025-06-25T17:33:21.849Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions x-goog-quota-user=projects/ecommerce-7b8bc
+[debug] [2025-06-25T17:33:21.849Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-25T17:33:23.351Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions 200
+[debug] [2025-06-25T17:33:23.351Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-25T17:33:23.351Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:23.351Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:23.351Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-06-25T17:33:23.351Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-25T17:33:25.002Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-06-25T17:33:25.002Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ecommerce-7b8bc/serviceAccounts/ecommerce-7b8bc@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-25T17:33:25.002Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:25.002Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:25.002Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc [none]
+[debug] [2025-06-25T17:33:25.369Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc 200
+[debug] [2025-06-25T17:33:25.370Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc {"projectId":"ecommerce-7b8bc","projectNumber":"850063276078","displayName":"Ecommerce","name":"projects/ecommerce-7b8bc","resources":{"hostingSite":"ecommerce-7b8bc"},"state":"ACTIVE","etag":"1_03ed8ad5-38f9-437a-b5d7-1a6245a0b062"}
+[info] 
+[info] === Deploying to 'ecommerce-7b8bc'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2025-06-25T17:33:25.373Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:25.373Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:25.373Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc [none]
+[debug] [2025-06-25T17:33:25.694Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc 200
+[debug] [2025-06-25T17:33:25.694Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc {"projectNumber":"850063276078","projectId":"ecommerce-7b8bc","lifecycleState":"ACTIVE","name":"Ecommerce","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-25T10:11:21.281181Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-06-25T17:33:25.695Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:25.696Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:25.696Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc/adminSdkConfig [none]
+[debug] [2025-06-25T17:33:26.356Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc/adminSdkConfig 200
+[debug] [2025-06-25T17:33:26.356Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-7b8bc/adminSdkConfig {"projectId":"ecommerce-7b8bc","storageBucket":"ecommerce-7b8bc.firebasestorage.app"}
+[debug] [2025-06-25T17:33:26.357Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:26.357Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:26.357Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ecommerce-7b8bc/configs [none]
+[debug] [2025-06-25T17:33:26.716Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ecommerce-7b8bc/configs 200
+[debug] [2025-06-25T17:33:26.716Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/ecommerce-7b8bc/configs {}
+[debug] [2025-06-25T17:33:26.717Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-06-25T17:33:27.242Z] > [functions] package.json contents: {
+  "name": "functions",
+  "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^4.4.1",
+    "next": "^15.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
+[debug] [2025-06-25T17:33:27.243Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-06-25T17:33:27.243Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-06-25T17:33:27.250Z] Found firebase-functions binary at 'C:\Users\saksh\OneDrive\Desktop\ecommerce\ecommmerceapp\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8647
+
+[error] (node:1676) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[debug] [2025-06-25T17:33:27.839Z] Got response from /__/functions.yaml {"endpoints":{"nextApp":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"nextApp"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged C:\Users\saksh\OneDrive\Desktop\ecommerce\ecommmerceapp\functions (36.54 KB) for uploading 
+[debug] [2025-06-25T17:33:31.901Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:31.901Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:31.901Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/-/functions [none]
+[debug] [2025-06-25T17:33:32.703Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/-/functions 200
+[debug] [2025-06-25T17:33:32.703Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/-/functions {}
+[debug] [2025-06-25T17:33:32.703Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:32.704Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:32.704Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/ecommerce-7b8bc/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-06-25T17:33:34.328Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/ecommerce-7b8bc/locations/-/functions 200
+[debug] [2025-06-25T17:33:34.328Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/ecommerce-7b8bc/locations/-/functions {}
+[debug] [2025-06-25T17:33:34.331Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:34.331Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:34.331Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc [none]
+[debug] [2025-06-25T17:33:35.836Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc 200
+[debug] [2025-06-25T17:33:35.836Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc {"projectNumber":"850063276078","projectId":"ecommerce-7b8bc","lifecycleState":"ACTIVE","name":"Ecommerce","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-06-25T10:11:21.281181Z"}
+[debug] [2025-06-25T17:33:35.839Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:35.839Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:35.839Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions [none]
+[debug] [2025-06-25T17:33:35.839Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-25T17:33:37.096Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions 200
+[debug] [2025-06-25T17:33:37.096Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/ecommerce-7b8bc/versions {"name":"projects/850063276078/sites/ecommerce-7b8bc/versions/beabeb099b85d59a","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-25T17:33:37.097Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2025-06-25T17:33:37.097Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:37.097Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:37.097Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions [none]
+[debug] [2025-06-25T17:33:37.097Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions x-goog-quota-user=projects/ecommerce-7b8bc
+[debug] [2025-06-25T17:33:37.097Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-06-25T17:33:37.370Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions 200
+[debug] [2025-06-25T17:33:37.370Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-7b8bc:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-06-25T17:33:37.370Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2025-06-25T17:33:37.370Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:37.370Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:37.370Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-06-25T17:33:37.370Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl {}
+[debug] [2025-06-25T17:33:38.186Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-06-25T17:33:38.186Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/0edef731-7e88-4d93-a6a0-a6c728dec38b.zip?GoogleAccessId=service-850063276078@gcf-admin-robot.iam.gserviceaccount.com&Expires=1750874617&Signature=i%2B0ZKf8xL1hgd%2FkiFLVIPOLNDeJKqLe0CG6PcdoI98IB2uzSqHpKKdCbD2GNzkPnVJyfqSTrFXvFcInJ8R%2BnpLTFph23T6UQT%2FuqBdGwutzQFm6bc9tzsflYhGnfI0LlDyNgX7VnLF%2FMGzoaij%2BhkHciFxh0SIiiDu9tQjechZzLJ%2B3kGwUtmsTZS1%2B8KGWX3m2GadP%2F2p9rdD75RnWGUZwDy9%2FkCSelIzEtz6mT5SjrnZGSAGBwqWKfkuYqZ0DchSxwXgQouLWv5kKW12CTBqLkBnfTd14jFEYhervHe1K4yYFJC9v8sRWyG18sNnn1unc4940emztm6mUw8J8i0Q%3D%3D"}
+[debug] [2025-06-25T17:33:38.187Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/0edef731-7e88-4d93-a6a0-a6c728dec38b.zip GoogleAccessId=service-850063276078%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1750874617&Signature=i%2B0ZKf8xL1hgd%2FkiFLVIPOLNDeJKqLe0CG6PcdoI98IB2uzSqHpKKdCbD2GNzkPnVJyfqSTrFXvFcInJ8R%2BnpLTFph23T6UQT%2FuqBdGwutzQFm6bc9tzsflYhGnfI0LlDyNgX7VnLF%2FMGzoaij%2BhkHciFxh0SIiiDu9tQjechZzLJ%2B3kGwUtmsTZS1%2B8KGWX3m2GadP%2F2p9rdD75RnWGUZwDy9%2FkCSelIzEtz6mT5SjrnZGSAGBwqWKfkuYqZ0DchSxwXgQouLWv5kKW12CTBqLkBnfTd14jFEYhervHe1K4yYFJC9v8sRWyG18sNnn1unc4940emztm6mUw8J8i0Q%3D%3D
+[debug] [2025-06-25T17:33:38.187Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/0edef731-7e88-4d93-a6a0-a6c728dec38b.zip [stream]
+[debug] [2025-06-25T17:33:38.918Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/0edef731-7e88-4d93-a6a0-a6c728dec38b.zip 200
+[debug] [2025-06-25T17:33:38.918Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/0edef731-7e88-4d93-a6a0-a6c728dec38b.zip [omitted]
+[info] +  functions: functions folder uploaded successfully 
+[info] i  hosting[ecommerce-7b8bc]: beginning deploy... 
+[info] i  hosting[ecommerce-7b8bc]: found 68 files in out 
+[debug] [2025-06-25T17:33:38.943Z] [hosting] uploading with 200 concurrency
+[debug] [2025-06-25T17:33:38.950Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:38.950Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:38.950Z] [hosting] hash cache [b3V0] stored for 68 files
+[debug] [2025-06-25T17:33:38.951Z] [hosting][hash queue][FINAL] {"max":3,"min":0,"avg":0.014003187499312463,"active":0,"complete":68,"success":68,"errored":0,"retried":0,"total":68,"elapsed":6}
+[debug] [2025-06-25T17:33:38.951Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/beabeb099b85d59a:populateFiles [none]
+[debug] [2025-06-25T17:33:38.951Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/beabeb099b85d59a:populateFiles {"files":{"/window.svg":"6bd2003bd35bb32c1c0d99ab3aeac0cc1edaefd79f27df1d954bc87184048d74","/vercel.svg":"529a1a21b4a82475a82db26173c28d7b27e2dc9d4b900eaf1c5329d96eea4ddd","/signup.txt":"b80ae2808405cd94aa708a07bd81c59aaf97ebacbc120a8bce9db92fc3f90264","/signup.html":"5b9f72e9e8e5f4f56ca6fb085401ab858a7226a275c0d242518fc9640cf1f2a3","/next.svg":"0665b9ab4493aa9d7e988b57024e28772ae543e804b8cf6b0a3633854b7c3c7f","/login.txt":"0b9abb8d404bf0e91ec14fd9ebc11ba0433df1f4a10f90fdb81d757b1c4dc9fb","/login.html":"d2cc42f0f04b3dd26b1552faafd9e8f518e84bb72170d2306cb774c989e2775d","/index.txt":"bc86b5b16eefa0ef12cc5f21d112cbfc7a3077f758fc1b9dac5af5b4ae03f7fe","/index.html":"e60c20894be92f0aac60d5b6a77c8f2c08e1dfe06a2f974d3d9cedcc96d4c102","/globe.svg":"6502a3e6120bf2d6e8417e7c40bb57fb8a6954de9c86d3f43076a75b60cd23a2","/file.svg":"5a09df6187e21aa9a7d05094389385876ac93c818e1dcbb77a26a8fe408bf79c","/favicon.ico":"36eaaa9259cda5765c4061fa8b7bf61c74dbda3a2a721a0811c73f5dae61a2e9","/404.html":"6cf2d5095a593cd3cb1a4f11bb1056f58b2a34d247121255d2c61f2f22952073","/_next/static/media/fe0777f1195381cb-s.woff2":"7ea8aa4c12ee19cf9064b1f8d31a8093ca9b7a20c430bd26ce8fa9d28ca49791","/_next/static/media/f5b513e981884070-s.woff2":"3e11e66105c9f9b0c3dbc8fff9737c1931ced47c4365477f3c51cd0c1d840535","/_next/static/media/f54d3b402c212b9e-s.woff2":"15de524ec8716cbc387d541d413bca723db1c93e2a5c111f0a0659bbf04db87d","/_next/static/media/f10b8e9d91f3edcb-s.woff2":"1bb6cff1da82f3a9b4f588c872083e412dc9756ff00e5c7a25a6ef9d5ac0d2ee","/_next/static/media/eafabf029ad39a43-s.p.woff2":"c5bd05024e1e2129db2746a432087f86ecee241a72d9990429e8e2a92f395391","/_next/static/media/e4af272ccee01ff0-s.p.woff2":"86835ac53a0e1de04820388d01b501389d5e9311509282b5e3bfbfc752754083","/_next/static/media/df0a9ae256c0569c-s.woff2":"5ef466d8ca6f4a51fa3751faea59ad2f63b15dbf9782ae4246bcadacc57f6b8f","/_next/static/media/db911767852bc875-s.woff2":"7a5cb883e026e70eadf536ff2a4053303f2d104108ef9109d95d96792c9acec0","/_next/static/media/c3bc380753a8436c-s.woff2":"ce8f68446de64b95bdb0484f6347d2e2aaebb12aa191f5c513f553c91da79555","/_next/static/media/b957ea75a84b6ea7-s.p.woff2":"a59c0152a6ad63dbbd6d072df71a1928613ca4f1e0c57824b06cfbaaab15ec7d","/_next/static/media/b8442747db2a9bad-s.woff2":"78504aa3875c01bd8a96c398db6a029aaaa25dbdc3b2b9643d89c60ffc981dff","/_next/static/media/a1386beebedccca4-s.woff2":"5232b7db292516451404f5717dbecf3e86ebbd61263585e160ce44518bdf19fa","/_next/static/media/9e82d62334b205f4-s.p.woff2":"7c3c031b2e08b8ba4918ea98de336074e998243db34e574a0e1f9038bcbe1998","/_next/static/media/97e0cb1ae144a2a9-s.woff2":"7f297ea688c4600e59ca6534a3f21f53bfa3f286cc0d19a35543315781951381","/_next/static/media/8e9860b6e62d6359-s.woff2":"cd2992a875e4939d47289a3cc44c8b8a0e63817f4cc9fbd8b3bdf93b5f66fbb3","/_next/static/media/8888a3826f4a3af4-s.p.woff2":"de52eb28b773356b47ace1d81c28e1932d1ec1fa302cc5455f0c7c8384b77a6c","/_next/static/media/7ede3623c9ddac57-s.woff2":"cbaf276deed5102e5c61474792f66d84028f5f0a332d4705f949914051ca4932","/_next/static/media/7db6c35d839a711c-s.p.woff2":"9162a070edc3148ec0ad858544b039329435841b25c3c487d48eea498c79fcdd","/_next/static/media/7108afb8b1381ad1-s.p.woff2":"fc83b4cde7b27e51420dc829cee7e56eaafd491abf763e55dc02fb549904011a","/_next/static/media/6c9a125e97d835e1-s.woff2":"b7ffcedc865fa6d6fec8b492ac73cf65920bf148c05e89c3325dde65b350cf2e","/_next/static/media/6c177e25b87fd9cd-s.woff2":"cc8cbeacc17b8d1c0cf8f83af10889fc738913bc742f9420b09c0dd7234f9a30","/_next/static/media/6245472ced48d3be-s.p.woff2":"98cb0f8f6ce0dc961c5a2fbcc3aeaec1e000fef3d5db37ada5e3e8529d3f7741","/_next/static/media/5fb25f343c7550ca-s.woff2":"9839e500050a774b62fcabc109d5841e85c2576781cfa7ae31192a1939724771","/_next/static/media/581909926a08bbc8-s.woff2":"0e60a16188a2d115835bb0497cc663807ef4c951ea3033aaaa98e4e9605510e1","/_next/static/media/55c55f0601d81cf3-s.woff2":"f919b2595b36cbe21633695ac08cbc808d615f1e5e964227b64c6d398caa0332","/_next/static/media/4c285fdca692ea22-s.p.woff2":"ee9454aec968f23e95e86cfca33bc62f2a2a452d97823eec4cc5829158bd88c2","/_next/static/media/29e7bbdce9332268-s.woff2":"c3a0c0179ad6dff7ee771b0e1bbbee12175c086ea7e0000e6bd5ff47e09af4b2","/_next/static/media/29a4aea02fdee119-s.woff2":"18ee0d92e52a5b2014a47b9474dde5cab064b2e257cf817139126426aebd7713","/_next/static/media/28485c0de2075f40-s.woff2":"0ec09af5dfed390ab4d71370390b0a2abda7c75f3851ee3facd0c751264a4da5","/_next/static/media/26a46d62cd723877-s.woff2":"ae5c06e2307aad7bf8fb02467ddd2ea6d7f40ea27915c5d9667f7632db6a0dbc","/_next/static/media/2246fb8caa01a49c-s.woff2":"e4165ae8de87e96519da47fc4ab9da99f8feef82d44ae079dc961079403abdee","/_next/static/media/0938b75f61da35fc-s.woff2":"15efdacf14198c4e0244983baee997ca5d698adc81c34245ee7eaa9944d0d01a","/_next/static/media/0484562807a97172-s.p.woff2":"bbf9d54f0278fe17c584ae99fbc265ea46f9972c2ba0e300bbef8329cd950333","/_next/static/media/034d78ad42e9620c-s.woff2":"e45679dfff636f4a386fab877f76e27139b3e60c3d1e11d31e527016c4157409","/_next/static/css/8332656bf35cec81.css":"00e82b4a328bc991f90c39db1bab043bc039b60249d8e316a647f53c491708d8","/_next/static/css/101fa57320d6aaf0.css":"21c0611b61bf22241297d2087eed81fd3d9bc4a72939d06e3bd8ba36d727dfec","/_next/static/chunks/webpack-b8fe7a5d48131678.js":"5ff58e1ae38118c7ae76affe177e62fd1553b6db1692d02c4903fd0e3954ee6b","/_next/static/chunks/polyfills-42372ed130431b0a.js":"18e28d3214eda45048d80d3925ea7627b809e69ad2e95f7f98459e9146a61c3d","/_next/static/chunks/main-app-63c4ce9b0348c1a8.js":"57f7cad1c6e9dff7ac47d4bb297c06df55ace22abba836ebbe1ec0b229570138","/_next/static/chunks/main-829d43144a777921.js":"dac2436658d875db7a6d536198b657f5d79e97b575eb544cf45755323faea9b5","/_next/static/chunks/framework-f593a28cde54158e.js":"c0e31b38c07fb2cac30269c70d55077e4f6a99e360e0c256f9b6f2d74adf24e4","/_next/static/chunks/684-6966b14bb5be4067.js":"23a2a50e3d5a36e61b157eec8895b36bf6f3b679acff48610e41d00b022a93b6","/_next/static/chunks/4bd1b696-706bea890ba55b7c.js":"99db1cc472f86b1e139c5d34542f09147d0df9ebd3468166b316b80fff8bbd74","/_next/static/chunks/472.a3826d29d6854395.js":"305e361c64ccf8c2f956618d58efccb54e7dfc79013eca70fe4e27abf0e2724e","/_next/static/chunks/341.df3329d77a5faa19.js":"9563f2302179d3abf33dd49b6eab6595a1cdeb7d581ca034be150957a06529e3","/_next/static/chunks/302-cfa01901dd588b85.js":"3f945283891b7d7271c3ae69435802b611e50dd883c35791491249634b3dcb57","/_next/static/chunks/pages/_error-71d2b6a7b832d02a.js":"36785219d9c2deae036e57c6807546fe7d1e5152565ab15ac68edd304c8e02dc","/_next/static/chunks/pages/_app-92f2aae776f86b9c.js":"f7ae3774eb08a03f3e0162b5074ae3e767bd46332f84cb20bca3ab1aa1f72eaf","/_next/static/chunks/app/page-687dfdffc8d1b6e5.js":"30217fd2bb176457348694d18b8c6d0f55fbfb48c970612b282e5876873efa8d","/_next/static/chunks/app/layout-bf27708ad52f4272.js":"ba6de316c897a202c7ca7dc793e5c806e0677e1345d2318a0dcdf451e2a29b5e","/_next/static/chunks/app/_not-found/page-7eb710445113f8e2.js":"57699909ca93875b9d5a282c5aa1b0771ed6bd28a90c5cdbe75525f721f28b87","/_next/static/chunks/app/(auth)/signup/page-a3493afdc25d1ec7.js":"d348dba80ce0cfb609d2daa9b6c9f347a7fdb78e1f25962036a9f4ccf3cff8fe","/_next/static/chunks/app/(auth)/login/page-c6c862afae7090ef.js":"d160f1089fdbeff00add005eadb5cb0779d543aae0905b78f0cac724c58f74be","/_next/static/0pkKCyOlqf9y5G4GSAw0Z/_ssgManifest.js":"dc28a4dc92fe352ed5d2201bd3972ce47691bc8e89e0400a68d1541d0567c6d5","/_next/static/0pkKCyOlqf9y5G4GSAw0Z/_buildManifest.js":"6c95f182cf53e60baba1e740c33cddc1758cf34a370eb1e7d61bd4172e9f7edc"}}
+[debug] [2025-06-25T17:33:39.468Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/beabeb099b85d59a:populateFiles 200
+[debug] [2025-06-25T17:33:39.468Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/850063276078/sites/ecommerce-7b8bc/versions/beabeb099b85d59a:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ecommerce-7b8bc/versions/beabeb099b85d59a/files"}
+[debug] [2025-06-25T17:33:39.469Z] [hosting][populate queue][FINAL] {"max":519,"min":519,"avg":519,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":520}
+[debug] [2025-06-25T17:33:39.469Z] [hosting] uploads queued: 0
+[debug] [2025-06-25T17:33:39.469Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1750872819469}
+[info] +  hosting[ecommerce-7b8bc]: file upload complete 
+[debug] [2025-06-25T17:33:39.469Z] [hosting] deploy completed after 548ms
+[info] i  functions: creating Node.js 22 (1st Gen) function nextApp(us-central1)... 
+[debug] [2025-06-25T17:33:39.471Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:39.471Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:39.471Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions [none]
+[debug] [2025-06-25T17:33:39.472Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions {"name":"projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp","sourceUploadUrl":"https://storage.googleapis.com/uploads-270615801296.us-central1.cloudfunctions.appspot.com/0edef731-7e88-4d93-a6a0-a6c728dec38b.zip?GoogleAccessId=service-850063276078@gcf-admin-robot.iam.gserviceaccount.com&Expires=1750874617&Signature=i%2B0ZKf8xL1hgd%2FkiFLVIPOLNDeJKqLe0CG6PcdoI98IB2uzSqHpKKdCbD2GNzkPnVJyfqSTrFXvFcInJ8R%2BnpLTFph23T6UQT%2FuqBdGwutzQFm6bc9tzsflYhGnfI0LlDyNgX7VnLF%2FMGzoaij%2BhkHciFxh0SIiiDu9tQjechZzLJ%2B3kGwUtmsTZS1%2B8KGWX3m2GadP%2F2p9rdD75RnWGUZwDy9%2FkCSelIzEtz6mT5SjrnZGSAGBwqWKfkuYqZ0DchSxwXgQouLWv5kKW12CTBqLkBnfTd14jFEYhervHe1K4yYFJC9v8sRWyG18sNnn1unc4940emztm6mUw8J8i0Q%3D%3D","entryPoint":"nextApp","runtime":"nodejs22","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"9bed87fb8050f89d0c6c5ea61c5a1d80cd3aee15"},"httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"minInstances":null,"maxInstances":null,"ingressSettings":null,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"ecommerce-7b8bc\",\"storageBucket\":\"ecommerce-7b8bc.firebasestorage.app\"}","GCLOUD_PROJECT":"ecommerce-7b8bc","EVENTARC_CLOUD_EVENT_SOURCE":"projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp"},"serviceAccountEmail":null,"availableMemoryMb":null,"timeout":null,"vpcConnector":null,"vpcConnectorEgressSettings":null,"buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}}
+[debug] [2025-06-25T17:33:40.102Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions 400
+[debug] [2025-06-25T17:33:40.102Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions {"error":{"code":400,"message":"Failed to create 1st Gen function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp: runtime: Runtime validation errors: [error_code: INVALID_RUNTIME\nmessage: \"Runtime \\\"nodejs22\\\" is not supported on GCF Gen1\"\n]","status":"INVALID_ARGUMENT"}}
+[warn] !  functions: failed to create function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp 
+[error] Failed to create function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp
+[debug] [2025-06-25T17:33:40.106Z] Total Function Deployment time: 632
+[debug] [2025-06-25T17:33:40.106Z] 1 Functions Deployed
+[debug] [2025-06-25T17:33:40.106Z] 1 Functions Errored
+[debug] [2025-06-25T17:33:40.106Z] 0 Function Deployments Aborted
+[debug] [2025-06-25T17:33:40.106Z] Average Function Deployment time: 632
+[info] 
+[info] Functions deploy had errors with the following functions:
+	nextApp(us-central1)
+[debug] [2025-06-25T17:33:40.261Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[debug] [2025-06-25T17:33:40.261Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:40.261Z] Checked if tokens are valid: true, expires at: 1750874563559
+[debug] [2025-06-25T17:33:40.261Z] >>> [apiv2][query] GET https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts [none]
+[debug] [2025-06-25T17:33:41.587Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts 404
+[debug] [2025-06-25T17:33:41.587Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-06-25T17:33:41.587Z] Failed to check artifact cleanup policy for region us-central1: Request to https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts had HTTP Error: 404, Requested entity was not found. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://artifactregistry.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/repositories/gcf-artifacts had HTTP Error: 404, Requested entity was not found.","status":404}
+[debug] [2025-06-25T17:33:41.587Z] Functions deploy failed.
+[debug] [2025-06-25T17:33:41.588Z] {
+  "endpoint": {
+    "id": "nextApp",
+    "project": "ecommerce-7b8bc",
+    "region": "us-central1",
+    "entryPoint": "nextApp",
+    "platform": "gcfv1",
+    "runtime": "nodejs22",
+    "httpsTrigger": {},
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"ecommerce-7b8bc\",\"storageBucket\":\"ecommerce-7b8bc.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "ecommerce-7b8bc",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp"
+    },
+    "codebase": "default",
+    "targetedByOnly": false,
+    "hash": "9bed87fb8050f89d0c6c5ea61c5a1d80cd3aee15",
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    }
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Failed to create 1st Gen function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp: runtime: Runtime validation errors: [error_code: INVALID_RUNTIME\nmessage: \"Runtime \\\"nodejs22\\\" is not supported on GCF Gen1\"\n]",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "Request to https://cloudfunctions.googleapis.com/v1/projects/ecommerce-7b8bc/locations/us-central1/functions had HTTP Error: 400, Failed to create 1st Gen function projects/ecommerce-7b8bc/locations/us-central1/functions/nextApp: runtime: Runtime validation errors: [error_code: INVALID_RUNTIME\nmessage: \"Runtime \\\"nodejs22\\\" is not supported on GCF Gen1\"\n]",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2025-06-25T17:33:41.662Z] Error: Failed to create function nextApp in region us-central1
+    at C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:52:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Fabricator.createV1Function (C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:182:32)
+    at async Fabricator.createEndpoint (C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:134:13)
+    at async handle (C:\Users\saksh\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions
