@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
+    "deploy": "npm run build && npm run export && firebase deploy",
     "lint": "next lint"
   },
   "dependencies": {
