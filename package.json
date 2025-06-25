@@ -5,11 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "export": "next export",
     "start": "next start",
-    "deploy": "npm run build && npm run export && firebase deploy",
+    "deploy": "npm run build && firebase deploy",
     "lint": "next lint",
-    "postbuild": "cp .next/routes-manifest.json .next/standalone/.next/routes-manifest.json"
+    "postbuild": "cp .next/routes-manifest.json .next/standalone/.next/routes-manifest.json && node copy-manifest.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
