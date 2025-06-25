@@ -1,0 +1,52 @@
+components/
+│
+├── ui/                          # Re-export ShadCN UI components (Button, Input, etc.)
+│   ├── button.tsx
+│   ├── input.tsx
+│   ├── badge.tsx
+│   └── index.ts
+│
+├── layout/                      # Layout-related components
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   ├── Sidebar.tsx
+│   └── Container.tsx
+│
+├── product/                     # Product card, grid, detail, etc.
+│   ├── ProductCard.tsx
+│   ├── ProductList.tsx
+│   ├── ProductDetail.tsx
+│   └── AddToCartButton.tsx
+│
+├── category/                    # Category navigation, filter UI
+│   ├── CategoryList.tsx
+│   ├── CategorySidebar.tsx
+│   └── CategoryFilter.tsx
+│
+├── cart/                        # Cart UI components
+│   ├── CartIcon.tsx
+│   ├── CartItem.tsx
+│   └── CartSummary.tsx
+│
+├── checkout/                    # Checkout form, steps
+│   ├── CheckoutForm.tsx
+│   ├── PaymentSection.tsx
+│   └── OrderSummary.tsx
+│
+├── auth/                        # Signup/Login UI
+│   ├── LoginForm.tsx
+│   ├── RegisterForm.tsx
+│   └── AuthWrapper.tsx
+│
+├── user/                        # Profile, orders, address management
+│   ├── UserProfile.tsx
+│   ├── OrderHistory.tsx
+│   └── AddressForm.tsx
+│
+├── shared/                      # Reusable generic components
+│   ├── Loader.tsx
+│   ├── EmptyState.tsx
+│   ├── Modal.tsx
+│   └── Toast.tsx
+│
+└── index.ts    
